@@ -1,0 +1,30 @@
+seed: 42
+output_folder: image_variations/imagenette_patch_ceckerboard
+
+dataset:
+  name: imagenette
+  root: data/imagenette/train
+  image_size: 224
+  batch_size: 16
+
+backdoor:
+  target_idx: 0
+  poison_first: true
+  poisoning_rate: 0.1
+  random_poisoning: false
+  poison_target_class: false
+  PatchBackdoor:
+    trigger_type: checkerboard
+    trigger_size: 9
+
+diffusion:
+  num_variations: 1
+  inference_steps: 50
+  guidance_scale: 7.5
+  color_transfer: true
+  height: 512
+  width: 512
+
+rtpt: # State RTPT details. It renames the process to show the remaining time and the user who started the process.
+  experiment_name: Generate Variations
+  name_initials: XX

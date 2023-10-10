@@ -1,0 +1,16 @@
+fvcore==0.1.5.post20211023
+wandb
+rtpt
+pandas
+pytorch-fid==0.2.1
+scikit-learn==0.24.2
+yapf
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==2.0.0+cu117
+torchvision==0.15.1+cu117
+timm==0.6.13
+diffusers==0.17.1
+transformers==4.30.2
+python_color_transfer==0.1.2a0
+opencv-python==4.5.5.64
+accelerate==0.20.3
