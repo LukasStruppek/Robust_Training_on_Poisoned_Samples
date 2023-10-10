@@ -1,7 +1,7 @@
 # Leveraging Diffusion-Based Image Variations for Robust Training on Poisoned Data
 
   <center>
-  <img src="images/concept.jpg" alt="Concept"  height=300>
+  <img src="images/concept.jpg" alt="Concept"  height=250>
   </center>
 
 > **Abstract:**
