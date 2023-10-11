@@ -100,7 +100,7 @@ If you build upon our work, please don't forget to cite us.
     author={Lukas Struppek and Martin B. Hentschel and Clifton Poth and Dominik Hintersdorf and Kristian Kersting},
     year={2023},
     journal = {arXiv preprint},
-    volume = {arXiv:TBD},
+    volume = {arXiv:2310.06372},
 }
 ```
 
