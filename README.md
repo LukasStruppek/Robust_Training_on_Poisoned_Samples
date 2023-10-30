@@ -61,7 +61,7 @@ Datasets are expected in the [ImageFolder](https://pytorch.org/vision/stable/gen
 
 ## Backdoor Attacks
 Currently the following backdoor attacks are implemented:
-- [BadNet](backdoor_attacks/patch_backdoor.py) with ```checkerboard```, ```white``` and ```black``` as trigger patches.
+- [BadNet](backdoor_attacks/patch_backdoor.py) with ```checkerboard```, ```white``` and ```black``` as trigger patches. Our implementation also supports RGB hex values. For example, ```#ffff00``` adds a yellow patch and ```checkerboard_#ffff00_#0000ff``` a yellow-blue checkerboard pattern.
 - [Blended](backdoor_attacks/blended_backdoor.py) with ```random``` noise patterns as trigger.
 
 For training, various options are available. The ```target_idx``` defines the backdoor's target class. The ```poisoning_rate``` describes the share of training samples that are poisoned. Currently, samples from the target class can also be poisoned but keep their label. The option ```poison_first``` specifies if the data is first resized and poisoned and then augmented with additional transformations, or if the poisoning takes place after the training transformations. ```random_poisoning``` specifies if a fixed subset of the training data is poisoned (```false```) or if samples are poisoned on-the-fly (```true```) with respect to the ```poisoning_rate```.
