@@ -6,6 +6,7 @@
 
 > **Abstract:**
 > *Backdoor attacks pose a serious security threat for training neural networks as they surreptitiously introduce hidden functionalities into a model. Such backdoors remain silent during inference on clean inputs, evading detection due to inconspicuous behavior. However, once a specific trigger pattern appears in the input data, the backdoor activates, causing the model to execute its concealed function. Detecting such poisoned samples within vast datasets is virtually impossible through manual inspection. To address this challenge, we propose a novel approach that enables model training on potentially poisoned datasets by utilizing the power of recent diffusion models. Specifically, we create synthetic variations of all training samples, leveraging the inherent resilience of diffusion models to potential trigger patterns in the data. By combining this generative approach with knowledge distillation, we produce student models that maintain their general performance on the task while exhibiting robust resistance to backdoor triggers.*  
+[Full Paper (Arxiv Preprint)](https://arxiv.org/abs/2310.06372)
 
 
 # Setup and Run Attacks
@@ -95,12 +96,11 @@ python train_student.py -c=configs/defaults/training_student.yaml
 ## Citation
 If you build upon our work, please don't forget to cite us.
 ```
-@article{struppek2023leveraging,
+@inproceedings{struppek2023leveraging,
     title={Leveraging Diffusion-Based Image Variations for Robust Training on Poisoned Data},    
     author={Lukas Struppek and Martin B. Hentschel and Clifton Poth and Dominik Hintersdorf and Kristian Kersting},
     year={2023},
-    journal = {arXiv preprint},
-    volume = {arXiv:2310.06372},
+    booktitle={NeurIPS 2023 Workshop on Backdoors in Deep Learning},
 }
 ```
 
